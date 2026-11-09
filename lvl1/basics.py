@@ -10,12 +10,7 @@ def is_even(n):
     return n % 2 == 0
 
 def greater_than_ten(nums):
-    total = 0
-    for num in nums:
-        if num > 10:
-            total += num
-
-    return total
+    return sum([num for num in nums if num > 10])
 
 def reverse(word):
     new_word = ""
